@@ -1,0 +1,41 @@
+name: Video idea
+description: Propose a new video idea for the ambience channel.
+labels: ["needs-plan"]
+body:
+  - type: input
+    id: working-title
+    attributes:
+      label: Working title
+      description: A short placeholder title for the video.
+      placeholder: Rainy night in a lakeside cabin
+    validations:
+      required: true
+  - type: textarea
+    id: setting
+    attributes:
+      label: Setting
+      description: Describe the place, time of day, weather and key visual details.
+      placeholder: A small wooden cabin by a lake at night, rain on the window, a fire glowing inside.
+    validations:
+      required: true
+  - type: dropdown
+    id: mood
+    attributes:
+      label: Mood
+      description: The main feeling the video should create.
+      options:
+        - calm
+        - cozy
+        - dreamy
+        - melancholic
+        - uplifting
+    validations:
+      required: true
+  - type: input
+    id: target-length
+    attributes:
+      label: Target length (minutes)
+      description: How long the finished video should run, in minutes.
+      placeholder: "60"
+    validations:
+      required: true
